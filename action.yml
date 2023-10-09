@@ -1,4 +1,4 @@
-name: "Sonar_Scanner"
+name: "Sonar Scanner"
 description: "Scanner code quality with Sonarqube"
 
 # Define your inputs here.
@@ -24,7 +24,7 @@ inputs:
 
 # Define your outputs here.
 outputs:
-  message:
+  sonarqube-status:
     description: "Your output description here"
 
 runs:
