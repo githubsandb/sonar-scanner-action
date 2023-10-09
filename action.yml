@@ -1,0 +1,32 @@
+name: 'Sonar_Scanner'
+description: 'Scanner code quality with Sonarqube'
+
+# Define your inputs here.
+inputs:
+  serverUrl:
+    description: 'Sonarqube Server URL'
+    required: true
+  token:
+    description: 'Sonarqube token'
+    required: true
+  projectKey:
+    description: 'Sonarqube project key'
+    required: true
+  projectVersion:
+    description: 'Sonarqube project version'
+    required: true
+  sources:
+    description: 'Sonarqube sources'
+    required: true
+  tests:
+    description: 'Sonarqube tests'
+    required: true
+
+# Define your outputs here.
+outputs:
+  message:
+    description: 'Your output description here'
+
+runs:
+  using: node20
+  main: dist/index.js
